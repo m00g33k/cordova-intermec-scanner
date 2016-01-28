@@ -1,0 +1,34 @@
+{
+    "version": "1.0.0",
+    "name": "com.shahidachmat.intermec.scanner",
+    "cordova_name": "cordova-intermec-scanner",
+    "description": "Cordova/Phonegap plugin that consumes the Intermec Barcode Scanner API ",
+    "author": "Shahid Achmat",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shady786/cordova-intermec-scanner.git"
+    },
+    "cordova": {
+        "id": "com.shahidachmat.intermec.scanner",
+        "platforms": [
+          "android"
+        ]
+    },
+    "issue": "https://github.com/shady786/cordova-intermec-scanner/issues",
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova",
+        "phonegap",
+        "android",
+        "scanner",
+        "barcode",
+        "intermec"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}

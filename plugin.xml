@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.shahidachmat.intermec.scanner"
+    version="1.0.0">
+
+  <name>Intermec Barcode Scaner</name>
+  <description>Cordova/Phonegap plugin that consumes the Intermec Barcode Scanner API</description>
+  <author>Shahid Achmat</author>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <repo>https://github.com/shady786/cordova-intermec-scanner.git</repo>
+  <issue>https://github.com/shady786/cordova-intermec-scanner/issues</issue>
+
+  <license>MIT</license>
+  <keywords>cordova,phonegap,android,scanner,barcode,intermec</keywords>
+
+  <!-- Android -->
+  <platform name="android">
+
+    <js-module src="www/android/scanner.js" name="scanner">
+      <clobbers target="intermecScanner" />
+    </js-module>
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="intermecScanner">
+        <param name="android-package" value="shahidachmat.intermec.intermecScanner"/>
+      </feature>
+    </config-file>
+    <source-file src="src/shahidachmat/intermec/intermecScanner.java" target-dir="src/shahidachmat.intermec/" />
+    <source-file src="src/libs/DataCollection.jar" target-dir="libs" />
+  </platform>
+
+</plugin>

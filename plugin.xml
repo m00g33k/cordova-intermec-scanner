@@ -30,7 +30,7 @@
         <param name="android-package" value="shahidachmat.intermec.intermecScanner"/>
       </feature>
     </config-file>
-    <source-file src="src/shahidachmat/intermec/intermecScanner.java" target-dir="src/shahidachmat.intermec/" />
+    <source-file src="src/shahidachmat/intermec/intermecScanner.java" target-dir="src/shahidachmat/intermec/" />
     <source-file src="src/libs/DataCollection.jar" target-dir="libs" />
   </platform>
 

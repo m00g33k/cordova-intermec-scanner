@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "com.shahidachmat.intermec.scanner",
     "cordova_name": "cordova-intermec-scanner",
     "description": "Cordova/Phonegap plugin that consumes the Intermec Barcode Scanner API ",

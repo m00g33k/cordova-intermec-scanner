@@ -17,6 +17,6 @@ intermecScanner.activateScanner(function (result) {
 # Disable Scanner
 <code>
 intermecScanner.deactivateScanner(function () {
-          _log.d("Scanner Deactivated...");
+          console.log("Scanner Deactivated...");
         });
 </code>

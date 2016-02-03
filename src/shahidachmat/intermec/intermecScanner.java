@@ -14,7 +14,7 @@ import com.intermec.aidc.*;
 
 public class intermecScanner extends CordovaPlugin implements BarcodeReadListener {
 
-    public static final String TAG = "ATAJO.INTERMEC";
+    public static final String TAG = "SCANNER.INTERMEC";
     private com.intermec.aidc.BarcodeReader bcr;
     private com.intermec.aidc.VirtualWedge wedge;
     final int duration = Toast.LENGTH_SHORT;

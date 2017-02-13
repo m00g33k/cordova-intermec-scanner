@@ -143,7 +143,9 @@ public class intermecScanner extends CordovaPlugin implements BarcodeReadListene
               public void run() {
                   Toast toast = Toast.makeText(cordova.getActivity().getApplicationContext(), message, duration);
                   toast.show();
-                  callbackContextReference.sendPluginResult(new PluginResult(PluginResult.Status.OK, message));
+                  PluginResult result_callback = new PluginResult(PluginResult.Status.OK, message);
+                  result_callback.setKeepCallback(true);
+                  callbackContextReference.sendPluginResult(result_callback);
               }
           });
      }
